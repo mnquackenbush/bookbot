@@ -2,8 +2,8 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_contents(book_path)
     word_count = word_counter(text)
-    letter_counts = letter_counter(text)
-    print(letter_counts)
+    character_counts = character_counter(text)
+        
 
     
 def get_book_contents(book_path):
@@ -12,10 +12,10 @@ def get_book_contents(book_path):
     return book_contents
 
 def word_counter(text):
-    num_words = len(text.split())
-    return f"There are {num_words} words in Frankenstein."
+    return len(text.split())
+     
 
-def letter_counter(text):
+def character_counter(text):
     lowercase_contents = text.lower()
     letter_count = {}
     for word in lowercase_contents:
