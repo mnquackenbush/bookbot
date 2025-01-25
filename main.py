@@ -14,7 +14,7 @@ def main():
 
     #Print each letter's count
     for letter in letter_counts:
-        print(f"The {letter} character was found {letter_counts[letter]} times")
+        print(f"The '{letter}' character was found {letter_counts[letter]} times")
 
     print("--- End report ---")
 
